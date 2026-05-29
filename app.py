@@ -32,6 +32,36 @@ El software permite:
 - evaluación axial OK/FAIL
 - exportación de resultados
 """)
+
+# =========================
+# HOW TO USE
+# =========================
+
+with st.expander("How to Use"):
+
+    st.markdown("""
+    ### Flujo de uso
+
+    1. Cargar archivo Excel
+    2. Verificar hojas requeridas
+    3. Ejecutar análisis FEM
+    4. Visualizar deformada estructural
+    5. Revisar esfuerzos y estados OK/FAIL
+    6. Exportar resultados
+
+    ### Hojas requeridas
+
+    - nodes
+    - elements
+    - loads
+    - supports
+    - control
+
+    ### Hojas opcionales
+
+    - load_cases
+    """)
+
 st.caption("Lectura desde Excel · Solver matricial · Esfuerzos axiales · OK/FAIL · Visualización")
 
 uploaded_file = st.sidebar.file_uploader("Cargar archivo Excel", type=["xlsx"])
