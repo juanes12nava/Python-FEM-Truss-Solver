@@ -13,6 +13,25 @@ from fem_tables import displacements_dataframe, forces_dataframe, reactions_data
 
 st.set_page_config(page_title="FEM Solver - Armaduras 2D/3D", layout="wide")
 st.title("Análisis FEM de Armaduras 2D/3D")
+st.info("""
+Carga un archivo Excel con las siguientes hojas:
+
+- nodes
+- elements
+- loads
+- supports
+- control
+
+Opcional:
+- load_cases
+
+El software permite:
+- análisis FEM 2D y 3D,
+- visualización estructural,
+- cálculo de fuerzas internas,
+- evaluación axial OK/FAIL,
+- exportación de resultados.
+""")
 st.caption("Lectura desde Excel · Solver matricial · Esfuerzos axiales · OK/FAIL · Visualización")
 
 uploaded_file = st.sidebar.file_uploader("Cargar archivo Excel", type=["xlsx"])
