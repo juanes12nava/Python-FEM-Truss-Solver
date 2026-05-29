@@ -26,11 +26,11 @@ Opcional:
 - load_cases
 
 El software permite:
-- análisis FEM 2D y 3D,
-- visualización estructural,
-- cálculo de fuerzas internas,
-- evaluación axial OK/FAIL,
-- exportación de resultados.
+- análisis FEM 2D y 3D
+- visualización estructural
+- cálculo de fuerzas internas
+- evaluación axial OK/FAIL
+- exportación de resultados
 """)
 st.caption("Lectura desde Excel · Solver matricial · Esfuerzos axiales · OK/FAIL · Visualización")
 
